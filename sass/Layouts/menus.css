@@ -1,0 +1,117 @@
+.menus {
+  padding: 0 1.5rem;
+  background-color: #f6f6f6;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 993px) {
+  .menus .desktop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .menus .desktop {
+    margin: 0 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menus .desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.menus h2 {
+  padding-top: 1rem;
+}
+.menus .new {
+  position: relative;
+}
+.menus .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99e2d0;
+  color: #1b6150;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+}
+.menus .card {
+  border-radius: 15px 15px 15px 15px;
+  flex-grow: 1;
+}
+.menus .card_image1 {
+  background-image: url("./images/restaurants/menu1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.menus .card_image2 {
+  background-image: url("./images/restaurants/menu2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.menus .card_image3 {
+  background-image: url("./images/restaurants/menu3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.menus .card_image4 {
+  background-image: url("./images/restaurants/menu4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+}
+.menus .card_description {
+  padding-bottom: 20px;
+  box-shadow: 2px 1px 7px -3px black;
+  position: relative;
+  background-color: white;
+  padding-top: 0.5rem;
+  border-radius: 0 0 15px 15px;
+  height: 5rem;
+}
+.menus .card_description h3 {
+  margin: 0.5rem;
+}
+.menus .card_description p {
+  margin: 0.5rem;
+}
+.menus .card_description i {
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+.menus .card_description .fas {
+  color: transparent;
+  background-image: linear-gradient(to top, rgb(147, 86, 220), rgb(255, 121, 218));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 400ms ease-in-out;
+}
+.menus .card_description .fas:hover {
+  opacity: 1;
+  transition: all 0.3s linear 0s;
+}
+
+.card:hover {
+  filter: brightness(1.1);
+  box-shadow: 8px 2px 10px 1px;
+}/*# sourceMappingURL=menus.css.map */

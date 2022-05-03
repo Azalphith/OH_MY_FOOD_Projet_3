@@ -1,0 +1,16 @@
+header {
+  font-family: "Shrikhand", cursive;
+  box-shadow: 0 0 0.5rem;
+  position: relative;
+  padding: 1px;
+}
+header i {
+  position: absolute;
+  display: flex;
+  padding: 1.05rem;
+  font-size: xx-large;
+}
+header h1 {
+  margin: 10px;
+  text-align: center;
+}/*# sourceMappingURL=header.css.map */

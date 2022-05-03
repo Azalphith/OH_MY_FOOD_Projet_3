@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@-webkit-keyframes menu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes menu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.carte {
+  background: #f6f6f6;
+  font-family: "Roboto";
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) {
+  .carte {
+    display: flex;
+    flex-wrap: wrap;
+    place-content: center;
+  }
+}
+.carte .entrée {
+  text-transform: uppercase;
+  padding: 0px 0 10px 20px;
+  position: relative;
+}
+.carte .entrée::after {
+  content: "";
+  top: 1.3rem;
+  left: 1.3rem;
+  height: 0.25rem;
+  width: 2.5rem;
+  background-color: #99e2d0;
+  position: absolute;
+}
+.carte .plat, .carte .dessert {
+  text-transform: uppercase;
+  padding: 30px 0 10px 20px;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .carte .plat, .carte .dessert {
+    padding-top: 0;
+  }
+}
+.carte .plat::after, .carte .dessert::after {
+  content: "";
+  top: 3.2rem;
+  left: 1.3rem;
+  height: 0.25rem;
+  width: 2.5rem;
+  background-color: #99e2d0;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .carte .plat::after, .carte .dessert::after {
+    top: 1.3rem;
+  }
+}
+.carte .pack {
+  -webkit-animation: menu 1s;
+          animation: menu 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: flex;
+  height: 60px;
+  position: relative;
+  background: white;
+  margin: 10px 20px 10px 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 2px #eaeaea;
+}
+.carte .pack:nth-child(1) {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.carte .pack:nth-child(2) {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.carte .pack:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.carte .pack:nth-child(4) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+.carte .pack:nth-child(5) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.carte .pack:nth-child(6) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+.carte .pack:nth-child(7) {
+  -webkit-animation-delay: 700ms;
+          animation-delay: 700ms;
+}
+.carte .pack:nth-child(8) {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+.carte .pack:nth-child(9) {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+.carte .pack h3 {
+  font-size: medium;
+  margin-bottom: 0;
+  padding: 10px 0 5px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte .pack p {
+  font-size: small;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.carte .pack .detail {
+  padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@media screen and (min-width: 992px) {
+  .carte .pack .detail {
+    margin-right: 3rem;
+  }
+}
+.carte .pack .check {
+  display: grid;
+  place-items: center;
+  background-color: #99e2d0;
+  margin-right: -3.5rem;
+  width: 3.5rem;
+  transition: all 0.5s;
+  border-radius: 0 15px 15px 0;
+}
+.carte .pack .check i {
+  color: #99e2d0;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+}
+.carte .pack .price {
+  display: block;
+  margin-left: auto;
+  font-weight: 500;
+  padding-right: 1rem;
+  padding-top: 30px;
+}
+.carte .pack:hover .check {
+  margin-right: 0;
+}
+.carte .pack:hover i {
+  -webkit-animation: quarterspin 0.5s ease-in-out;
+          animation: quarterspin 0.5s ease-in-out;
+}
+@-webkit-keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes quarterspin {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .lose {
+    margin-right: 56px;
+  }
+}/*# sourceMappingURL=carte.css.map */

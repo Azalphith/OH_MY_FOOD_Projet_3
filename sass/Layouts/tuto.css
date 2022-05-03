@@ -1,0 +1,51 @@
+.tuto {
+  margin-top: 2.5rem;
+  counter-reset: steps;
+  padding: 0 1.5rem;
+}
+.tuto ol {
+  gap: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .tuto ol {
+    display: flex;
+    justify-content: center;
+  }
+}
+.tuto li {
+  position: relative;
+  list-style-type: none;
+  background-color: #f6f6f6;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  box-shadow: 2px 1px 7px -3px black;
+}
+.tuto li i {
+  margin-right: 1rem;
+  color: #7e7e7e;
+  font-size: 1.2rem;
+}
+.tuto li::before {
+  content: "" counter(steps);
+  counter-increment: steps;
+  color: white;
+  background-color: #9356dc;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1rem;
+  left: -1rem;
+}
+.tuto li:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  background-color: #f5edff;
+  box-shadow: 5px 2px 10px 1px black;
+}
+.tuto li:hover i {
+  color: #9356dc;
+}/*# sourceMappingURL=tuto.css.map */

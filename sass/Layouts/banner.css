@@ -1,0 +1,24 @@
+.banner img {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  .banner img {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner img {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner img {
+    height: 30vh;
+  }
+}/*# sourceMappingURL=banner.css.map */

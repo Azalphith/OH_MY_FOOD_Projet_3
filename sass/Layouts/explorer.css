@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  font-family: "Roboto";
+}
+
+h3, p {
+  margin: 0;
+}
+
+.explorer {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 240px;
+}
+.explorer h2 {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.explorer p {
+  text-align: center;
+  font-size: 1rem;
+}
+.explorer button {
+  color: white;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: transform 200ms;
+  margin-top: 1rem;
+  box-shadow: 2px 1px 7px -3px black;
+}
+.explorer button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  opacity: 0.9;
+  box-shadow: 5px 2px 10px 1px black;
+}
+
+.loader {
+  font-size: xx-large;
+  font-weight: 400;
+  font-family: "Shrikhand";
+  text-align: center;
+  position: fixed;
+  background-color: #ffffff;
+  height: 100vh;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.95;
+  -webkit-animation: loader 2s;
+          animation: loader 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  transform-origin: center;
+}
+.loader .oh {
+  background-color: white;
+  color: rgba(153, 51, 85, 0.4);
+}
+.loader .my {
+  color: #ff79da;
+}
+.loader .food {
+  color: #99e2d0;
+}
+.loader i {
+  -webkit-animation: spin 1s infinite linear;
+          animation: spin 1s infinite linear;
+}
+
+@-webkit-keyframes loader {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes loader {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=explorer.css.map */
